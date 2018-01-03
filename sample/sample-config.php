@@ -774,7 +774,7 @@
                     'border-right'  => '3px',
                     'border-bottom' => '3px',
                     'border-left'   => '3px'
-                )
+                ),
             ),
             array(
                 'id'       => 'opt-header-border-expanded',
