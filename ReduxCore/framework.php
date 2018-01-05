@@ -2029,6 +2029,10 @@
                     require_once ABSPATH . "wp-includes/pluggable.php";
                 }
 
+                if(!isset($_GET['page']) || ((strpos($_GET['page'], 'options') === false)) ){
+                    return false;
+                }
+
                 if ( $this->args['options_api'] == true ) {
                     register_setting( $this->args['opt_name'] . '_group', $this->args['opt_name'], array(
                         $this,
